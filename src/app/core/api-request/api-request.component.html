@@ -1,0 +1,37 @@
+<div class="cont">
+  <div>
+    <h2>Single Request</h2>
+    <div>
+      <span>Completed: {{singleResObject?.completed}}</span>
+      <br/>
+
+      <span>Id: {{singleResObject?.id}}</span>
+      <br/>
+
+      <span>Title:{{singleResObject?.title}}</span>
+      <br/>
+
+      <span>UserId:{{singleResObject?.userId}}</span>
+    </div>
+  </div>
+
+  <div>
+    <h2>Multiple Request</h2>
+    <div *ngFor="let todo of MultipleResObjectArr">
+      <span>Completed: {{todo?.completed}}</span>
+      <br/>
+
+      <span>Id: {{todo?.id}}</span>
+      <br/>
+
+      <span>Title: {{todo?.title}}</span>
+      <br/>
+
+      <span>UserId: {{todo?.userId}}</span>
+      <br/>
+      <br/>
+      <br/>
+
+    </div>
+  </div>
+</div>
